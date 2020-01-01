@@ -25,6 +25,7 @@
         <module name="order" />
         <module name="order-api" />
         <module name="portal" />
+        <module name="redis-kit" />
         <module name="txlcn-tm" />
         <module name="warehouse" />
         <module name="warehouse-api" />
@@ -35,6 +36,8 @@
       <module name="order-api" target="1.8" />
       <module name="order-split" target="1.8" />
       <module name="portal" target="1.8" />
+      <module name="redis-kit" target="1.8" />
+      <module name="redis-lock" target="1.8" />
       <module name="txlcn-tm" target="1.8" />
       <module name="warehouse" target="1.8" />
       <module name="warehouse-api" target="1.8" />
