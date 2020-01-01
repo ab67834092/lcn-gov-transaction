@@ -14,7 +14,6 @@ public class OrderApiImpl implements OrderApi {
     OrderService orderService;
 
     @Override
-    @LcnTransaction
     public void test() {
         orderService.test();
     }

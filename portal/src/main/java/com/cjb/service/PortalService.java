@@ -22,6 +22,5 @@ public class PortalService {
         orderApi.test();
         //扣减库存
         warehouseApi.test();
-
     }
 }

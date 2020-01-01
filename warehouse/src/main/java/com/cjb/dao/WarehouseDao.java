@@ -6,5 +6,5 @@ import org.apache.ibatis.annotations.Param;
 @Mapper
 public interface WarehouseDao {
 
-    public void test(@Param("userName") String userName);
+    public void test();
 }

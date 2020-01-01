@@ -14,7 +14,6 @@ public class WarehouseApiImpl implements WarehouseApi {
     WarehouseService warehouseService;
 
     @Override
-    @LcnTransaction
     public void test() {
         warehouseService.test();
     }

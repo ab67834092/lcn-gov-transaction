@@ -15,8 +15,9 @@ public class WarehouseService {
     @Autowired
     WarehouseDao warehouseDao;
 
+    @LcnTransaction
     public void test(){
-        //下订单
-        warehouseDao.test("warehouse:"+UUID.randomUUID().toString());
+        //扣减库存
+        warehouseDao.test();
     }
 }

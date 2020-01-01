@@ -6,5 +6,5 @@ import org.apache.ibatis.annotations.Param;
 @Mapper
 public interface OrderDao {
 
-    public void test(@Param("userName") String userName);
+    public void test(@Param("orderNo") String orderNo);
 }
