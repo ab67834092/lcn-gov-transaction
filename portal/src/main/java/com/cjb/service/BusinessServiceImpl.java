@@ -7,7 +7,6 @@ import com.cjb.api.WarehouseApi;
 import com.cjb.bean.MqMsg;
 import com.cjb.dao.BusinessDao;
 import com.cjb.dao.MqMsgDao;
-import com.cjb.dao.MqMsgMapper;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
