@@ -15,12 +15,6 @@ import java.util.UUID;
 @Service
 public class PortalService {
 
-    @Reference(version = "1.0.0")
-    public OrderApi orderApi;
-
-    @Reference(version = "1.0.0")
-    public WarehouseApi warehouseApi;
-
     @Autowired
     LockService lockService;
 
@@ -30,24 +24,12 @@ public class PortalService {
     @Autowired
     MsgDao msgDao;
 
-    @LcnTransaction //分布式事务注解
+
     public void test() throws Exception {
         try{
             if(lockService.tryLock("lcok")){
-                //处理业务
+                //统一处理业务入口
                 msgService.addMsg();
-
-//                msgDao = null;
-//
-//
-//                msgDao.addMsg(UUID.randomUUID().toString());
-
-
-
-                //下订单
-                orderApi.test();
-                //扣减库存
-                warehouseApi.test();
             }
         }finally {
             lockService.unLock("lock");

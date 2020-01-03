@@ -16,6 +16,7 @@ public class WarehouseService {
     WarehouseDao warehouseDao;
 
     @LcnTransaction
+    @Transactional
     public void test(){
         //扣减库存
         warehouseDao.test();
