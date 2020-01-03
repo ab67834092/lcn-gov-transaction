@@ -25,7 +25,7 @@ public class PortalService {
     MsgDao msgDao;
 
 
-    public void test() throws Exception {
+    public void test() throws InterruptedException {
         try{
             if(lockService.tryLock("lcok")){
                 //统一处理业务入口
