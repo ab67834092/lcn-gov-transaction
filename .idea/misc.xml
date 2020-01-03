@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/txlcn-tm/pom.xml" />
         <option value="$PROJECT_DIR$/tx-manager/pom.xml" />
         <option value="$PROJECT_DIR$/redis-kit/pom.xml" />
+        <option value="$PROJECT_DIR$/other-system/pom.xml" />
       </list>
     </option>
   </component>

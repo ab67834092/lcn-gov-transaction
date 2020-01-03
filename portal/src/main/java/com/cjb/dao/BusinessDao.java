@@ -4,7 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 @Mapper
-public interface MsgDao {
+public interface BusinessDao {
 
-    public void addMsg(@Param("msgId") String msgId);
+    public void insert(@Param("businessId") String businessId);
 }

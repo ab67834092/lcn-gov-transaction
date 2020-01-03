@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cjb.dao.MqMsgDao" >
+  <resultMap id="BaseResultMap" type="com.cjb.bean.MqMsg" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="message_id" property="messageId" jdbcType="VARCHAR" />
+    <result column="message_body" property="messageBody" jdbcType="VARCHAR" />
+    <result column="message_send_num" property="messageSendNum" jdbcType="INTEGER" />
+    <result column="message_status" property="messageStatus" jdbcType="INTEGER" />
+    <result column="queue_name" property="queueName" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, message_id, message_body,message_send_num,message_status,queue_name
+  </sql>
+  <insert id="insert" parameterType="com.cjb.bean.MqMsg" >
+    insert into lcn_mq_msg_t (id, message_id, message_body,
+      message_send_num, message_status,queue_name)
+    values (#{id,jdbcType=VARCHAR}, #{messageId,jdbcType=VARCHAR}, #{messageBody,jdbcType=VARCHAR},
+      #{messageSendNum,jdbcType=INTEGER}, #{messageStatus,jdbcType=INTEGER},#{queueName,jdbcType=VARCHAR})
+  </insert>
+
+  <update id="updateById" parameterType="com.cjb.bean.MqMsg" >
+    update lcn_mq_msg_t
+    set message_id = #{messageId,jdbcType=VARCHAR},
+      message_body = #{messageBody,jdbcType=VARCHAR},
+      message_send_num = #{messageSendNum,jdbcType=INTEGER},
+      message_status = #{messageStatus,jdbcType=INTEGER},
+      queue_name = #{queueName,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+
+</mapper>
