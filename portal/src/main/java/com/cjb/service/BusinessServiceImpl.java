@@ -8,7 +8,6 @@ import com.cjb.bean.MqMsg;
 import com.cjb.dao.BusinessDao;
 import com.cjb.dao.MqMsgDao;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
-import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
