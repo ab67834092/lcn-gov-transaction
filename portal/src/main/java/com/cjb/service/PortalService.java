@@ -1,26 +1,27 @@
 package com.cjb.service;
 
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.cjb.api.OrderApi;
-import com.cjb.api.WarehouseApi;
-import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import com.cjb.lock.LockService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class PortalService {
 
-    @Reference(version = "1.0.0")
-    public OrderApi orderApi;
+    @Autowired
+    LockService lockService;
 
-    @Reference(version = "1.0.0")
-    public WarehouseApi warehouseApi;
+    @Autowired
+    BusinessService businessService;
 
-    @LcnTransaction //分布式事务注解
-    public void test(){
-        //下订单
-        orderApi.test();
-        //扣减库存
-        warehouseApi.test();
+
+    public void test() throws InterruptedException {
+        try{
+            if(lockService.tryLock("lcok")){
+                //统一处理业务入口
+                businessService.test();
+            }
+        }finally {
+            lockService.unLock("lock");
+        }
     }
 }

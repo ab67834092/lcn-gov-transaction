@@ -25,11 +25,8 @@ public class TestController {
     @Autowired
     PortalService portalService;
 
-    @Autowired
-    LockService lockService;
-
     @GetMapping(value = "test/{num}")
-    public void test(@PathVariable int num) throws InterruptedException {
+    public void test(@PathVariable int num){
         List count = new ArrayList();
         ExecutorService executorService = Executors.newCachedThreadPool();
         final CountDownLatch begin = new CountDownLatch(1);
@@ -39,19 +36,13 @@ public class TestController {
                 @Override
                 public void run() {
                     try {
-//                        begin.await();
-                        if(lockService.tryLock("lcok")){
-                            portalService.test();
+                        portalService.test();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
 //                            if(CollectionUtils.isEmpty(count)){
 //                                count.add(100);
 //                            }
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }finally {
-                        lockService.unLock("lcok");
-//                        end.countDown();
-                    }
                 }
             };
             executorService.submit(runnable);

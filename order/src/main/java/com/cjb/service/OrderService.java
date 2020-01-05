@@ -17,6 +17,7 @@ public class OrderService {
     OrderDao orderDao;
 
     @LcnTransaction
+    @Transactional
     public void test(){
         //下订单
         orderDao.test("order:"+UUID.randomUUID().toString());
