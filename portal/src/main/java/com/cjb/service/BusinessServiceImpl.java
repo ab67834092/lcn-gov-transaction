@@ -8,6 +8,7 @@ import com.cjb.bean.MqMsg;
 import com.cjb.dao.BusinessDao;
 import com.cjb.dao.MqMsgDao;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,9 @@ import java.util.UUID;
 @Service
 public class BusinessServiceImpl implements BusinessService {
 
-    public static final String QUEUE_NAME = "queue-test";
+    public static final String EXCHANGE_NAME = "test.topic";
+
+    public static final String ROUTING_KEY = "queue-test";
 
     @Reference(version = "1.0.0")
     public OrderApi orderApi;
@@ -43,10 +46,10 @@ public class BusinessServiceImpl implements BusinessService {
     @Transactional
     public void test(){
         /**以下为本系统RPC调用**/
-        //本地业务
-        businessDao.insert(UUID.randomUUID().toString());
         //下订单
         orderApi.test();
+        //本地业务
+        businessDao.insert(UUID.randomUUID().toString());
         //扣减库存
         warehouseApi.test();
         /**以下为通过mq调用其他系统**/
@@ -55,27 +58,15 @@ public class BusinessServiceImpl implements BusinessService {
         //本地记录调用消息日志 1 发送中  2 发送完成
         //定时任务对发送中消息进行再次发送
         MqMsg mqMsg = new MqMsg();
-        mqMsg.setMessageId(UUID.randomUUID().toString());
+        String msgId = UUID.randomUUID().toString();
+        mqMsg.setMessageId(msgId);
         mqMsg.setMessageBody("123");
         mqMsg.setMessageSendNum(1);
         mqMsg.setMessageStatus(1);
         mqMsg.setQueueName(QUEUE_NAME);
         mqMsgDao.insert(mqMsg);
         //调用mq 发送消息
-        this.rabbitTemplate.convertAndSend(QUEUE_NAME, JSON.toJSONString(mqMsg));
+        this.rabbitTemplate.convertAndSend(EXCHANGE_NAME,ROUTING_KEY, JSON.toJSONString(mqMsg),new CorrelationData(msgId));
     }
 
-    //mq消息发送确认机制
-    public void setUp(){
-        rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
-            @Override
-            public void confirm(CorrelationData correlationData, boolean ack, String s) {
-                if(!ack){
-                    return;
-                }
-                System.out.println(JSON.toJSONString(correlationData));
-                System.out.println(JSON.toJSONString(s));
-            }
-        });
-    }
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.cjb.dao.BusinessDao" >
   <insert id="insert" parameterType="String" >
-    insert into lcn_business_t (bussiness_id)
+    insert into lcn_business_t (business_id)
     values (#{businessId,jdbcType=VARCHAR})
   </insert>
 </mapper>
