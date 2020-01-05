@@ -63,10 +63,10 @@ public class BusinessServiceImpl implements BusinessService {
         mqMsg.setMessageBody("123");
         mqMsg.setMessageSendNum(1);
         mqMsg.setMessageStatus(1);
-        mqMsg.setQueueName(QUEUE_NAME);
+        mqMsg.setQueueName(EXCHANGE_NAME);
         mqMsgDao.insert(mqMsg);
         //调用mq 发送消息
-        this.rabbitTemplate.convertAndSend(EXCHANGE_NAME,ROUTING_KEY, JSON.toJSONString(mqMsg),new CorrelationData(msgId));
+        this.rabbitTemplate.convertAndSend(EXCHANGE_NAME,"", JSON.toJSONString(mqMsg),new CorrelationData(msgId));
     }
 
 }
