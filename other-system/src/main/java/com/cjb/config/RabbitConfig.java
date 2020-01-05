@@ -3,17 +3,13 @@ package com.cjb.config;
 import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.amqp.AmqpException;
-import org.springframework.amqp.core.Message;
-import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.rabbit.connection.*;
+import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
+import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.lang.Nullable;
-
-import javax.annotation.Resource;
 
 /**
  * rabbitMq 配置类
@@ -49,7 +45,6 @@ public class RabbitConfig {
         Logger log = LoggerFactory.getLogger(RabbitTemplate.class);
         RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
 
-
         rabbitTemplate.setMandatory(true);
         rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
             @Override
@@ -62,15 +57,6 @@ public class RabbitConfig {
                 System.out.println(JSON.toJSONString(cause));
             }
         });
-        // 消息发送失败返回到队列中, yml需要配置 publisher-returns: true
-        rabbitTemplate.setReturnCallback(new RabbitTemplate.ReturnCallback() {
-            @Override
-            public void returnedMessage(Message message, int replyCode, String replyText, String exchange, String routingKey) {
-                String correlationId = message.getMessageProperties().getCorrelationId();
-                log.debug("消息：{} 发送失败, 应答码：{} 原因：{} 交换机: {}  路由键: {}", correlationId, replyCode, replyText, exchange, routingKey);
-            }
-        });
-
         return rabbitTemplate;
     }
 }
