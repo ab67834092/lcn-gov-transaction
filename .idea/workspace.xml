@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb1ae5fc-0d58-447d-baa5-e9fd9d9283a0" name="Default Changelist" comment="Default Changelist">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/config/RedisConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/config/RedissonConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/lock/LockService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/lock/LockServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/template/CjbRedisTemplageImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/template/CjbRedisTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portal/pom.xml" afterPath="$PROJECT_DIR$/portal/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portal/src/main/java/com/cjb/controller/TestController.java" afterPath="$PROJECT_DIR$/portal/src/main/java/com/cjb/controller/TestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/txlcn-tm/txlcn-tm.iml" afterPath="$PROJECT_DIR$/txlcn-tm/txlcn-tm.iml" />
-    </list>
+    <list default="true" id="fb1ae5fc-0d58-447d-baa5-e9fd9d9283a0" name="Default Changelist" comment="Default Changelist" />
     <ignored path="$PROJECT_DIR$/order/target/" />
     <ignored path="$PROJECT_DIR$/portal/target/" />
     <ignored path="$PROJECT_DIR$/warehouse/target/" />
@@ -98,7 +83,7 @@
       <file leaf-file-name="LockServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/lock/LockServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
+            <state relative-caret-position="518">
               <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -252,8 +237,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -582,6 +565,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1151,14 +1136,14 @@
     <list size="10">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.OrderApiApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.WarehouseApiApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TxManagerApplication" />
-      <item index="3" class="java.lang.String" itemvalue="Spring Boot.OrderApplication" />
-      <item index="4" class="java.lang.String" itemvalue="Spring Boot.PortalApplication" />
-      <item index="5" class="java.lang.String" itemvalue="Spring Boot.TMApplication" />
-      <item index="6" class="java.lang.String" itemvalue="Spring Boot.WarehouseApplication" />
-      <item index="7" class="java.lang.String" itemvalue="Spring Boot.OrderSplitApplication" />
-      <item index="8" class="java.lang.String" itemvalue="Spring Boot.RedisLockApplication" />
-      <item index="9" class="java.lang.String" itemvalue="Spring Boot.RedisKitApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.OrderSplitApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.RedisLockApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.RedisKitApplication" />
+      <item index="5" class="java.lang.String" itemvalue="Application.TxManagerApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.OrderApplication" />
+      <item index="7" class="java.lang.String" itemvalue="Spring Boot.PortalApplication" />
+      <item index="8" class="java.lang.String" itemvalue="Spring Boot.TMApplication" />
+      <item index="9" class="java.lang.String" itemvalue="Spring Boot.WarehouseApplication" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1205,6 +1190,7 @@
       <workItem from="1577807880251" duration="197000" />
       <workItem from="1577839426027" duration="368000" />
       <workItem from="1577839818569" duration="27995000" />
+      <workItem from="1578197025160" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1577846636934</created>
@@ -1217,15 +1203,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67751000" />
+    <option name="totallyTimeSpent" value="67782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="1934" height="1030" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1237,19 +1222,20 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28958786" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28958786" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30043384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1301,9 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <marker date="1577844451588" expanded="true" signature="241:316" ph="insert into lcn_order_t... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1311,7 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,7 +1301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,7 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1335,7 +1315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,9 +1322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding>
-            <marker date="1577844326563" expanded="true" signature="222:275" ph="update lcn_w... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1353,7 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-177">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,10 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="e#507#508#0" expanded="false" />
-            <element signature="e#546#547#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1372,7 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,103 +1350,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
           <caret line="1614" column="16" selection-start-line="1614" selection-start-column="16" selection-end-line="1614" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/RedisLockApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis-lock/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="43" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal/src/main/java/com/cjb/redis/base/RedisCommandServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal/src/main/java/com/cjb/redis/base/RedisCommandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portal/src/main/java/com/cjb/redis/config/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/lock/RedisLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/lock/RedisLockImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/RedisLockApplication.java" />
+    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/redis-lock/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/portal/src/main/java/com/cjb/redis/base/RedisCommandServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/portal/src/main/java/com/cjb/redis/base/RedisCommandService.java" />
+    <entry file="file://$PROJECT_DIR$/portal/src/main/java/com/cjb/redis/config/RedisConfig.java" />
+    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/lock/RedisLock.java" />
+    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/lock/RedisLockImpl.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.1.0/jedis-3.1.0.jar!/redis/clients/jedis/JedisCluster.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/lock/RedisLockInternals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/lock/CjbRedisLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1876">
-          <caret line="59" column="66" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/lock/RedisLockInternals.java" />
+    <entry file="file://$PROJECT_DIR$/redis-lock/src/main/java/com/cjb/lock/CjbRedisLock.java" />
     <entry file="file://$PROJECT_DIR$/../redis-cluster/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1484,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1492,7 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1500,7 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1512,35 +1406,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/RedisKitApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/RedisKitApplication.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.3.RELEASE/spring-data-redis-2.2.3.RELEASE.jar!/org/springframework/data/redis/connection/RedisStandaloneConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/config/cluster/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/config/cluster/RedisConfig.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.3.RELEASE/spring-data-redis-2.2.3.RELEASE.jar!/org/springframework/data/redis/connection/jedis/JedisClientConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1548,7 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1556,7 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1572,10 +1448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-765">
           <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
-          <folding>
-            <element signature="e#5370#5371#0" expanded="true" />
-            <element signature="e#5436#5437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1583,26 +1455,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10762">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/config/standalone/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="35" column="67" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/config/standalone/RedisConfig.java" />
     <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/template/CjbRedisTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
           <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#884#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1610,10 +1470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="497" column="14" selection-start-line="497" selection-start-column="14" selection-end-line="497" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1564#1594#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1621,7 +1477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1639,7 +1494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1673,7 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="143" column="10" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1681,10 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="353" column="24" selection-start-line="353" selection-start-column="24" selection-end-line="353" selection-end-column="24" />
-          <folding>
-            <element signature="e#14662#14663#0" expanded="true" />
-            <element signature="e#14752#14753#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1692,18 +1541,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-290">
           <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/lock/CjbLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/lock/CjbLock.java" />
     <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/lock/LockService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -1714,7 +1555,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redis-kit/src/main/java/com/cjb/lock/LockServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
+        <state relative-caret-position="518">
           <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
