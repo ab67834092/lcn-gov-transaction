@@ -22,17 +22,22 @@ public class LockServiceImpl implements LockService{
     @Override
     public boolean tryLock(String lockId) throws InterruptedException {
         if(lockMap.containsKey(lockId)){
-            return lockMap.get(lockId).tryLock(0, 10, TimeUnit.SECONDS);
+            return lockMap.get(lockId).tryLock(5, 10, TimeUnit.SECONDS);
         }
         RLock lock = client.getLock(lockId);
         lockMap.put(lockId,lock);
-        return lock.tryLock(0, 10, TimeUnit.SECONDS);
+        return lock.tryLock(5, 10, TimeUnit.SECONDS);
     }
 
     @Override
     public void unLock(String lockId) {
         if(lockMap.containsKey(lockId)){
-            lockMap.get(lockId).unlock();
+            RLock rLock = lockMap.get(lockId);
+            if(rLock.isLocked()){
+                if(rLock.isHeldByCurrentThread()){
+                    rLock.unlock();
+                }
+            }
         }
     }
 }
